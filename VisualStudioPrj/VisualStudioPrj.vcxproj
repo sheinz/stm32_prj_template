@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00FB93CC-F21E-4EC5-89D7-C9C60B9B5566}</ProjectGuid>
+    <RootNamespace>VisualStudioPrj</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>c:\Keil\ARM\RV31\INC\;../StdPeriph/inc;../FreeRTOS/Include/;../App/;../FreeRTOS/portable/RVDS/ARM_CM3/;../CMSIS/;../emWin/Include;../drivers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F10X_HD;USE_STDPERIPH_DRIVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\App\FreeRTOSConfig.h" />
+    <ClInclude Include="..\App\stm32f10x_conf.h" />
+    <ClInclude Include="..\CMSIS\core_cm3.h" />
+    <ClInclude Include="..\CMSIS\stm32f10x.h" />
+    <ClInclude Include="..\CMSIS\stm32f10x_it.h" />
+    <ClInclude Include="..\CMSIS\system_stm32f10x.h" />
+    <ClInclude Include="..\drivers\crc8.h" />
+    <ClInclude Include="..\drivers\ds18b20.h" />
+    <ClInclude Include="..\drivers\lcd.h" />
+    <ClInclude Include="..\drivers\onewire.h" />
+    <ClInclude Include="..\drivers\rtc.h" />
+    <ClInclude Include="..\emWin\Include\BUTTON.h" />
+    <ClInclude Include="..\emWin\Include\CHECKBOX.h" />
+    <ClInclude Include="..\emWin\Include\CHOOSECOLOR.h" />
+    <ClInclude Include="..\emWin\Include\CHOOSEFILE.h" />
+    <ClInclude Include="..\emWin\Include\DIALOG.h" />
+    <ClInclude Include="..\emWin\Include\DIALOG_Intern.h" />
+    <ClInclude Include="..\emWin\Include\DROPDOWN.h" />
+    <ClInclude Include="..\emWin\Include\EDIT.h" />
+    <ClInclude Include="..\emWin\Include\FRAMEWIN.h" />
+    <ClInclude Include="..\emWin\Include\Global.h" />
+    <ClInclude Include="..\emWin\Include\GRAPH.h" />
+    <ClInclude Include="..\emWin\Include\GUI.h" />
+    <ClInclude Include="..\emWin\Include\GUIConf.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_BitPlains.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_DCache.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_Dist.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_FlexColor.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_Generic.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_IST3088.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_Lin.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_NoOpt_1_8.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_S1D13748.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_S1D15G00.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_SLin.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_SPage.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_SSD1926.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_Template.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_TemplateI.h" />
+    <ClInclude Include="..\emWin\Include\GUIDRV_TemplateI_Private.h" />
+    <ClInclude Include="..\emWin\Include\GUI_ARRAY.h" />
+    <ClInclude Include="..\emWin\Include\GUI_ConfDefaults.h" />
+    <ClInclude Include="..\emWin\Include\GUI_Debug.h" />
+    <ClInclude Include="..\emWin\Include\GUI_FontIntern.h" />
+    <ClInclude Include="..\emWin\Include\GUI_HOOK.h" />
+    <ClInclude Include="..\emWin\Include\GUI_Private.h" />
+    <ClInclude Include="..\emWin\Include\GUI_SetOrientation.h" />
+    <ClInclude Include="..\emWin\Include\GUI_SetOrientationCX.h" />
+    <ClInclude Include="..\emWin\Include\GUI_Type.h" />
+    <ClInclude Include="..\emWin\Include\GUI_Version.h" />
+    <ClInclude Include="..\emWin\Include\GUI_VNC.h" />
+    <ClInclude Include="..\emWin\Include\HEADER.h" />
+    <ClInclude Include="..\emWin\Include\ICONVIEW.h" />
+    <ClInclude Include="..\emWin\Include\IMAGE.h" />
+    <ClInclude Include="..\emWin\Include\LCD.h" />
+    <ClInclude Include="..\emWin\Include\LCDConf.h" />
+    <ClInclude Include="..\emWin\Include\LCD_ConfDefaults.h" />
+    <ClInclude Include="..\emWin\Include\LCD_Private.h" />
+    <ClInclude Include="..\emWin\Include\LCD_Protected.h" />
+    <ClInclude Include="..\emWin\Include\LCD_SIM.h" />
+    <ClInclude Include="..\emWin\Include\LISTBOX.h" />
+    <ClInclude Include="..\emWin\Include\LISTVIEW.h" />
+    <ClInclude Include="..\emWin\Include\LISTWHEEL.h" />
+    <ClInclude Include="..\emWin\Include\MENU.h" />
+    <ClInclude Include="..\emWin\Include\MESSAGEBOX.h" />
+    <ClInclude Include="..\emWin\Include\MULTIEDIT.h" />
+    <ClInclude Include="..\emWin\Include\MULTIPAGE.h" />
+    <ClInclude Include="..\emWin\Include\PROGBAR.h" />
+    <ClInclude Include="..\emWin\Include\RADIO.h" />
+    <ClInclude Include="..\emWin\Include\SCROLLBAR.h" />
+    <ClInclude Include="..\emWin\Include\SLIDER.h" />
+    <ClInclude Include="..\emWin\Include\SPINBOX.h" />
+    <ClInclude Include="..\emWin\Include\TEXT.h" />
+    <ClInclude Include="..\emWin\Include\TREEVIEW.h" />
+    <ClInclude Include="..\emWin\Include\WIDGET.h" />
+    <ClInclude Include="..\emWin\Include\WM.h" />
+    <ClInclude Include="..\emWin\Include\WM_GUI.h" />
+    <ClInclude Include="..\emWin\Include\WM_Intern.h" />
+    <ClInclude Include="..\emWin_port\GUIConf.h" />
+    <ClInclude Include="..\emWin_port\LCDConf.h" />
+    <ClInclude Include="..\FreeRTOS\include\croutine.h" />
+    <ClInclude Include="..\FreeRTOS\include\FreeRTOS.h" />
+    <ClInclude Include="..\FreeRTOS\include\list.h" />
+    <ClInclude Include="..\FreeRTOS\include\mpu_wrappers.h" />
+    <ClInclude Include="..\FreeRTOS\include\portable.h" />
+    <ClInclude Include="..\FreeRTOS\include\projdefs.h" />
+    <ClInclude Include="..\FreeRTOS\include\queue.h" />
+    <ClInclude Include="..\FreeRTOS\include\semphr.h" />
+    <ClInclude Include="..\FreeRTOS\include\StackMacros.h" />
+    <ClInclude Include="..\FreeRTOS\include\task.h" />
+    <ClInclude Include="..\FreeRTOS\include\timers.h" />
+    <ClInclude Include="..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h" />
+    <ClInclude Include="..\StdPeriph\inc\misc.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_adc.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_bkp.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_can.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_cec.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_crc.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_dac.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_dbgmcu.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_dma.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_exti.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_flash.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_fsmc.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_gpio.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_i2c.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_iwdg.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_pwr.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_rcc.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_rtc.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_sdio.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_spi.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_tim.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_usart.h" />
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_wwdg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\App\main.c" />
+    <ClCompile Include="..\CMSIS\core_cm3.c" />
+    <ClCompile Include="..\CMSIS\stm32f10x_it.c" />
+    <ClCompile Include="..\CMSIS\system_stm32f10x.c" />
+    <ClCompile Include="..\drivers\crc8.c" />
+    <ClCompile Include="..\drivers\ds18b20.c" />
+    <ClCompile Include="..\drivers\lcd.c" />
+    <ClCompile Include="..\drivers\onewire.c" />
+    <ClCompile Include="..\drivers\rtc.c" />
+    <ClCompile Include="..\emWin_port\GUIConf.c" />
+    <ClCompile Include="..\emWin_port\GUI_X.c" />
+    <ClCompile Include="..\emWin_port\LCDConf.c" />
+    <ClCompile Include="..\FreeRTOS\croutine.c" />
+    <ClCompile Include="..\FreeRTOS\list.c" />
+    <ClCompile Include="..\FreeRTOS\portable\MemMang\heap_2.c" />
+    <ClCompile Include="..\FreeRTOS\portable\RVDS\ARM_CM3\port.c" />
+    <ClCompile Include="..\FreeRTOS\queue.c" />
+    <ClCompile Include="..\FreeRTOS\tasks.c" />
+    <ClCompile Include="..\FreeRTOS\timers.c" />
+    <ClCompile Include="..\StdPeriph\src\misc.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_adc.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_bkp.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_can.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_cec.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_crc.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_dac.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_dbgmcu.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_dma.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_exti.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_flash.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_fsmc.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_gpio.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_i2c.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_iwdg.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_pwr.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_rcc.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_rtc.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_sdio.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_spi.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_tim.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_usart.c" />
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_wwdg.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Startup\startup_stm32f10x_hd.s" />
+    <None Include="..\StdPeriph\Release_Notes.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{4239d8bd-1cff-4555-8798-d3358beb9d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StdPeriph">
+      <UniqueIdentifier>{35e8a606-6fe3-49d3-9267-64a5c1e08524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{0b76ec66-7076-493f-9ae1-e2c76b3ca133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMSIS">
+      <UniqueIdentifier>{fb5f6c50-1dd7-4734-ad2b-78f0676c0300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FreeRTOS">
+      <UniqueIdentifier>{403bece9-ca6b-4ec8-a204-78e75755bfd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="emWin_Inc">
+      <UniqueIdentifier>{158de484-131c-4065-92f6-aa97fb550f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="emWin_Port">
+      <UniqueIdentifier>{66ad0b7d-2a9f-4427-946e-34f2286086a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FreeRTOS\inc">
+      <UniqueIdentifier>{244eb1b9-5515-4b2a-89d3-a6e0b3be33f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers">
+      <UniqueIdentifier>{0f65e984-42e1-45ad-9ebb-f8ea5f74887f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\App\FreeRTOSConfig.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\App\stm32f10x_conf.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CMSIS\core_cm3.h">
+      <Filter>CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CMSIS\stm32f10x.h">
+      <Filter>CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CMSIS\stm32f10x_it.h">
+      <Filter>CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CMSIS\system_stm32f10x.h">
+      <Filter>CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\misc.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_adc.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_bkp.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_can.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_cec.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_crc.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_dac.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_dbgmcu.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_dma.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_exti.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_flash.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_fsmc.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_gpio.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_i2c.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_iwdg.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_pwr.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_rcc.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_rtc.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_sdio.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_spi.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_tim.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_usart.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdPeriph\inc\stm32f10x_wwdg.h">
+      <Filter>StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h">
+      <Filter>FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\BUTTON.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\CHECKBOX.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\CHOOSECOLOR.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\CHOOSEFILE.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\DIALOG.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\DIALOG_Intern.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\DROPDOWN.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\EDIT.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\FRAMEWIN.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\Global.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GRAPH.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_ARRAY.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_ConfDefaults.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_Debug.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_FontIntern.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_HOOK.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_Private.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_SetOrientation.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_SetOrientationCX.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_Type.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_Version.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUI_VNC.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIConf.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_BitPlains.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_DCache.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_Dist.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_FlexColor.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_Generic.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_IST3088.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_Lin.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_NoOpt_1_8.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_S1D15G00.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_S1D13748.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_SLin.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_SPage.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_SSD1926.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_Template.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_TemplateI.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\GUIDRV_TemplateI_Private.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\HEADER.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\ICONVIEW.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\IMAGE.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LCD.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LCD_ConfDefaults.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LCD_Private.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LCD_Protected.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LCD_SIM.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LCDConf.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LISTBOX.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LISTVIEW.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\LISTWHEEL.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\MENU.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\MESSAGEBOX.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\MULTIEDIT.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\MULTIPAGE.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\PROGBAR.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\RADIO.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\SCROLLBAR.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\SLIDER.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\SPINBOX.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\TEXT.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\TREEVIEW.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\WIDGET.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\WM.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\WM_GUI.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin\Include\WM_Intern.h">
+      <Filter>emWin_Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin_port\GUIConf.h">
+      <Filter>emWin_Port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\emWin_port\LCDConf.h">
+      <Filter>emWin_Port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\croutine.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\FreeRTOS.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\list.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\mpu_wrappers.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\portable.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\projdefs.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\queue.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\semphr.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\StackMacros.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\task.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOS\include\timers.h">
+      <Filter>FreeRTOS\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\crc8.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\ds18b20.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\lcd.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\onewire.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\rtc.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\App\main.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CMSIS\core_cm3.c">
+      <Filter>CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CMSIS\stm32f10x_it.c">
+      <Filter>CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CMSIS\system_stm32f10x.c">
+      <Filter>CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\misc.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_adc.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_bkp.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_can.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_cec.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_crc.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_dac.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_dbgmcu.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_dma.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_exti.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_flash.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_fsmc.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_gpio.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_i2c.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_iwdg.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_pwr.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_rcc.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_rtc.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_sdio.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_spi.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_tim.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_usart.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StdPeriph\src\stm32f10x_wwdg.c">
+      <Filter>StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\croutine.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\list.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\queue.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\tasks.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\timers.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\portable\RVDS\ARM_CM3\port.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FreeRTOS\portable\MemMang\heap_2.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\emWin_port\GUI_X.c">
+      <Filter>emWin_Port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\emWin_port\GUIConf.c">
+      <Filter>emWin_Port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\emWin_port\LCDConf.c">
+      <Filter>emWin_Port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\crc8.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\ds18b20.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\lcd.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\onewire.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\rtc.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\StdPeriph\Release_Notes.html">
+      <Filter>StdPeriph</Filter>
+    </None>
+    <None Include="..\Startup\startup_stm32f10x_hd.s">
+      <Filter>Startup</Filter>
+    </None>
+  </ItemGroup>
+</Project>
