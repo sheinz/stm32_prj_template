@@ -210,11 +210,11 @@ int main(void)
    xTaskCreate(vKeyTask, "KeyTask", 1024, NULL, 20, ( xTaskHandle * ) NULL);
 
    /* Start the scheduler. */
-	vTaskStartScheduler();
+   vTaskStartScheduler();
 	
-	/* Will only get here if there was not enough heap space to create the
-	idle task. */
-	return 0;
+   /* Will only get here if there was not enough heap space to create the
+   idle task. */
+   return 0;
 }
 
 // ----------------------------------------------------------------------------
